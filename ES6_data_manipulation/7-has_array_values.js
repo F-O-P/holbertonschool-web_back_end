@@ -1,3 +1,6 @@
-export default function hasValuesFromArray(aSet, anArray) {
-  return anArray.every(value => aSet.has(value));
+export default function hasValuesFromArray(set, array) {
+  if (array.every((element) => set.has(element))) {
+    return true;
+  }
+  return false;
 }
